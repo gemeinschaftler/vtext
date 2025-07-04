@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Link Tree</title>
+  <style>
+    body { font-family: sans-serif; }
+    ul { list-style-type: none; padding-left: 1em; }
+    li { margin: 2px 0; }
+    li.folder > span { cursor: pointer; font-weight: bold; }
+    li.folder ul { margin-left: 1em; }
+    .hidden { display: none; }
+    #filter { margin-bottom: 1em; padding: 4px; width: 200px; }
+  </style>
+</head>
+<body>
+  <h1>Website Link Tree</h1>
+  <input id="filter" type="text" placeholder="Search..." />
+  <div id="tree"></div>
+
+  <script src="linktree.js"></script>
+</body>
+</html>
